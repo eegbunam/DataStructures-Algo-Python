@@ -88,6 +88,33 @@ def word_ladder(start, end, words):
     
 """
 
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot","dot","dog","lot","log","cog"]
 
+def findLadders2(beginWord, endWord , wordList):
+    dic = set(wordList)
+    queue = [(beginWord, [beginWord])]
+    seen = set()
+    localVisited = set()
+    ans  = []
+    while(queue):
+      lenght = len(queue)
+      for _ in range(lenght):
+          word , path = queue.pop(0)
+          if word == endWord:
+              ans += path
+              return ans
+          for i in range(len(word)):
+              for c in range(ord("a") , (ord("z")+1)):
+                  new_word = word[:i] + chr(c) + word[i+1:]
+                  if new_word not in seen and new_word in dic:
+                      queue.append((new_word, path + [new_word]))
+                      seen.add(new_word)
+    return []
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot","dot","dog","lot","log","cog"]
+print(findLadders2(beginWord, endWord , wordList))
 
 

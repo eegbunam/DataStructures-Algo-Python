@@ -1,0 +1,28 @@
+{
+  "files": {
+    "week2/week2session2.py": [
+      {
+        "id": "39eab706-72f3-435a-8a15-6cb720ae4cf6",
+        "line": 83,
+        "version": 1,
+        "index": 2039
+      }
+    ],
+    "week6/EvaluateDivision.py": [
+      {
+        "id": "294f5cfc-96e0-4b88-af40-b54a77a71c93",
+        "line": 40,
+        "version": 2241,
+        "index": 1371
+      }
+    ],
+    "week7/ShiftingLetters.py": [
+      {
+        "id": "a38ecd6a-f7e8-49d3-881a-df9e49efb647",
+        "line": 50,
+        "version": 1740,
+        "index": 1281
+      }
+    ]
+  }
+}
